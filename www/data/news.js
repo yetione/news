@@ -1,4 +1,4 @@
-{
+jsonCallback({
   "data":[
     {
       "header":"Header",
@@ -397,4 +397,4 @@
       "date":"05.10.2017 22:41"
     }
   ]
-}
+});
