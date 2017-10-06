@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <base href="/">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3 hidden-md">
+                        <div class="jumbotron">
+                            <h1>Hello, world!</h1>
+                            <p>...</p>
+                            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="page-header">
+                                        <h1>Example page header <small>Subtext for header</small></h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="nav nav-pills">
+                                        <li role="presentation" class="active"><a href="#">Home</a></li>
+                                        <li role="presentation"><a href="#">Profile</a></li>
+                                        <li role="presentation"><a href="#">Messages</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="items_full">
+
+                    </div>
+                </div>
+
+        </div>
+        <div class="col-md-3" id="items_list" style="position: fixed;right: 0;max-height: 100%;overflow: scroll;overflow-x: hidden;">
+
+                <div class="list-group" >
+
+                </div>
+
+
+        </div>
+    </div>
+</div>
+<script id="item-full-template" type="text/x-handlebars-template">
+    <div class="news-item">
+        <div class="date"><a name="{{id}}">{{date}}</a></div>
+        <div class="header">{{header}}</div>
+        <div class="content">
+            <p>{{content}}</p>
+        </div>
+    </div>
+</script>
+<script id="item-item-template" type="text/x-handlebars-template">
+    <a href="#{{id}}" class="list-group-item">{{header}}</a>
+</script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/handlebars.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
